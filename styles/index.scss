@@ -29,3 +29,7 @@ body {
     height: 100dvh;
     position: relative;
 }
+
+::-webkit-scrollba {
+    display: none;
+}
