@@ -8,12 +8,16 @@
         @include section-heading-mixin;
     }
 
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
     .whatpeoplesay-section--aside-content {
-        @include flex-center-mixin;
-        flex-wrap: wrap;
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
         gap: 2rem;
-        width: 70%;
-        padding: $padding-2;
+        padding: $padding-4 $padding-4*4;
 
         article {
             @include flex-center-mixin;
@@ -21,6 +25,7 @@
             gap: 5px;
             flex-wrap: wrap;
             width: 13rem;
+            min-width: 13rem;
             min-height: 15rem;
             align-items: self-start;
             box-shadow: 0px 10px 15px 0px #655A5A40;
@@ -60,14 +65,10 @@
                 }
             }
         }
-
     }
-}
 
-@media (max-width:400px) {
-    .whatpeoplesay-section {
-        h1 {
-            font-size: $font-size-md * 1.25;
-        }
+    .whatpeoplesay-section--arrows {
+        align-self: flex-end;
+        padding: 0 $padding-4;
     }
 }

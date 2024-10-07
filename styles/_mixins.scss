@@ -57,6 +57,10 @@
         left: 50%;
         transform: translateX(-50%);
         width: 50%;
-        border-bottom: 3px solid #F64C72;
+        border-bottom: 2px solid #F64C72;
+    }
+
+    @media (max-width:500px) {
+        font-size: $font-size-md;
     }
 }
