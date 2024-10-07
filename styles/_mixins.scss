@@ -1,5 +1,27 @@
-@mixin flex-center {
+@mixin flex-center-mixin {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin list-mixin {
+    list-style-type: none;
+    font-size: $font-size-sm;
+}
+
+@mixin hide-element-mixin {
+    display: none;
+}
+
+@mixin show-element-mixin {
+    display: block;
+}
+
+@mixin button-mixin {
+    border: 0;
+    padding: $padding-1;
+    font-size: $font-size-sm;
+    font-family: $font-primary;
+    font-weight: 700;
+    text-align: center;
 }
