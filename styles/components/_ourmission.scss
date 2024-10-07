@@ -1,0 +1,52 @@
+.our-mission {
+    @include flex-center-mixin;
+    justify-content: space-between;
+    width: 100%;
+    height: 30rem;
+
+    img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .our-mission--aside-content {
+        @include flex-center-mixin;
+        flex-direction: column;
+        gap: 2rem;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        color: $font-main;
+        text-align: center;
+
+        h1 {
+            font-family: $font-primary;
+            font-size: $font-size-lg;
+            font-weight: 500;
+        }
+
+        p {
+            width: 70%;
+        }
+
+        button {
+            outline: 1px solid $secondary;
+            padding: $padding-1 $padding-3;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media (max-width:900px) {
+    .our-mission {
+        img {
+            display: none;
+        }
+
+        .our-mission--aside-content {
+            width: 100%;
+        }
+    }
+}
