@@ -1,0 +1,67 @@
+.whatpeoplesay-section {
+    @include flex-center-mixin;
+    flex-direction: column;
+    gap: 3rem;
+
+    h1 {
+        font-size: $font-size-lg;
+        font-weight: 500;
+        font-family: $font-primary;
+        color: $font-sub-heading;
+    }
+
+    .whatpeoplesay-section--aside-content {
+        @include flex-center-mixin;
+        flex-wrap: wrap;
+        gap: 2rem;
+        width: 70%;
+        padding: $padding-2;
+
+        article {
+            @include flex-center-mixin;
+            flex-direction: column;
+            gap: 5px;
+            flex-wrap: wrap;
+            width: 13rem;
+            min-height: 15rem;
+            align-items: self-start;
+            box-shadow: 0px 10px 15px 0px #655A5A40;
+            padding: $padding-3;
+            border-radius: 5px;
+            gap: 1rem;
+
+            .whatpeoplesay--stars {
+                width: 4rem;
+            }
+
+            .whatpeoplesay--testimony {
+                width: 2rem;
+            }
+
+            p {
+                font-family: $font-secondary;
+                font-size: $font-size-sm;
+                color: #697694;
+            }
+
+            cite {
+                @include flex-center-mixin;
+                font-style: normal;
+                color: $font-content;
+
+                h3 {
+                    font-family: $font-primary;
+                    font-size: $font-size-sm;
+                    padding: 0px 15px;
+                }
+
+                h5 {
+                    font-family: $font-primary;
+                    font-size: $font-size-xs;
+                    padding: 0px 15px;
+                }
+            }
+        }
+
+    }
+}
