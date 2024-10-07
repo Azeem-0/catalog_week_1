@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 3rem;
     width: 100%;
+    padding: $padding-4 0 $padding-4*2;
 
     h1 {
         font-size: $font-size-lg;
@@ -16,6 +17,7 @@
         flex-wrap: wrap;
         gap: 2rem;
         width: 70%;
+        padding: $padding-4 0;
 
         article {
             @include flex-center-mixin;

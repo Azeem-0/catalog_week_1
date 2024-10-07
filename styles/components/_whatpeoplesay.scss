@@ -2,6 +2,7 @@
     @include flex-center-mixin;
     flex-direction: column;
     gap: 3rem;
+    padding: 0 0 $padding-4*2;
 
     h1 {
         font-size: $font-size-lg;
@@ -63,5 +64,13 @@
             }
         }
 
+    }
+}
+
+@media (max-width:400px) {
+    .whatpeoplesay-section {
+        h1 {
+            font-size: $font-size-md * 1.25;
+        }
     }
 }

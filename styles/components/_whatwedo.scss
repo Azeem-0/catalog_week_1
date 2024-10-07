@@ -16,7 +16,7 @@
         @include flex-center-mixin;
         flex-wrap: wrap;
         gap: 3rem;
-        padding: 0 $padding-3*3;
+        padding: $padding-3*2 $padding-3*3;
 
         article {
             @include flex-center-mixin;
