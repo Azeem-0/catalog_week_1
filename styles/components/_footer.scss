@@ -1,0 +1,72 @@
+.footer-section {
+    @include flex-center-mixin;
+    flex-direction: column;
+    width: 100%;
+
+    .footer-section--card-1 {
+        @include flex-center-mixin;
+        gap: 2rem;
+        flex-direction: column;
+        text-align: center;
+        background-color: $primary;
+        color: $secondary;
+        width: 100%;
+        padding: $padding-4 0;
+
+        h1 {
+            font-family: $font-primary;
+            font-size: $font-size-lg ;
+            font-weight: 500;
+        }
+
+        p {
+            font-family: $font-secondary;
+            font-size: $font-size-sm;
+            font-weight: 300;
+            width: 40%;
+        }
+    }
+
+    .footer-section--card-2 {
+        @include flex-center-mixin;
+        width: 100%;
+        justify-content: space-between;
+        padding: $padding-4 * 2;
+
+        .footer-section--card-2--copyright {
+            @include flex-center-mixin;
+            flex-direction: column;
+            align-items: self-start;
+
+            small {
+                font-family: $font-secondary;
+                color: $font-sub-heading;
+                font-size: $font-size-sm;
+            }
+        }
+
+        .footer-section--card-2--social {
+            @include flex-center-mixin;
+            gap: 1rem;
+            color: $font-sub-heading;
+
+            i {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media (max-width:600px) {
+    .footer-section {
+        .footer-section--card-2 {
+            flex-direction: column;
+            gap: 2rem;
+
+            .footer-section--card-2--copyright {
+                align-items: center;
+            }
+        }
+    }
+}

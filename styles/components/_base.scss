@@ -5,3 +5,9 @@ input {
 button {
     @include button-mixin;
 }
+
+@media (max-width:400px) {
+    input {
+        padding: 0.5rem;
+    }
+}
