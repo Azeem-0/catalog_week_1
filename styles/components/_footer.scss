@@ -1,12 +1,10 @@
 .footer-section {
-    @include flex-center-mixin;
+    @include flex-mixin(center, center, column);
     flex-direction: column;
     width: 100%;
 
     .footer-section--card-1 {
-        @include flex-center-mixin;
-        gap: 2rem;
-        flex-direction: column;
+        @include flex-mixin(center, center, column, 2rem);
         text-align: center;
         background-color: $primary;
         color: $secondary;
@@ -28,15 +26,12 @@
     }
 
     .footer-section--card-2 {
-        @include flex-center-mixin;
+        @include flex-mixin(space-between, center);
         width: 100%;
-        justify-content: space-between;
         padding: $padding-4 $padding-4 * 2;
 
         .footer-section--card-2--copyright {
-            @include flex-center-mixin;
-            flex-direction: column;
-            align-items: self-start;
+            @include flex-mixin(center, self-start, column);
 
             small {
                 font-family: $font-secondary;
@@ -46,8 +41,7 @@
         }
 
         .footer-section--card-2--social {
-            @include flex-center-mixin;
-            gap: 1rem;
+            @include flex-mixin(center, center, default, 1rem);
             color: $font-sub-heading;
 
             i {

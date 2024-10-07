@@ -1,7 +1,5 @@
 .whatpeoplesay-section {
-    @include flex-center-mixin;
-    flex-direction: column;
-    gap: 3rem;
+    @include flex-mixin(center, center, column, 3rem);
     padding: 0 0 $padding-4*2;
 
     .whatpeoplesay-section--heading {
@@ -20,18 +18,13 @@
         padding: $padding-4 $padding-4*4;
 
         article {
-            @include flex-center-mixin;
-            flex-direction: column;
-            gap: 5px;
-            flex-wrap: wrap;
+            @include flex-mixin(center, self-start, column, 1rem, wrap);
             width: 13rem;
             min-width: 13rem;
             min-height: 15rem;
-            align-items: self-start;
             box-shadow: 0px 10px 15px 0px #655A5A40;
             padding: $padding-3;
             border-radius: 5px;
-            gap: 1rem;
 
             .whatpeoplesay--stars {
                 width: 4rem;
@@ -48,7 +41,7 @@
             }
 
             cite {
-                @include flex-center-mixin;
+                @include flex-mixin(center, center);
                 font-style: normal;
                 color: $font-content;
 

@@ -1,15 +1,11 @@
 .about-section {
-    @include flex-center-mixin;
-    flex-direction: column;
+    @include flex-mixin(center, center, column, 1rem);
     width: 100%;
-    gap: 1rem;
     position: relative;
     top: -3rem;
 
     .about-section--card {
-        @include flex-center-mixin;
-        flex-direction: column;
-        gap: 2rem;
+        @include flex-mixin(center, center, column, 2rem);
         width: 50%;
         box-shadow: 0px 10px 15px 0px #7E616140;
         padding: $padding-4 $padding-2;
@@ -37,8 +33,7 @@
             margin: $margin-2*3 0 $margin-2*5;
 
             .about-section--rules-images {
-                @include flex-center-mixin;
-                justify-content: space-evenly;
+                @include flex-mixin(space-evenly, center);
                 position: absolute;
                 width: 80%;
                 bottom: 14%;
@@ -67,8 +62,7 @@
         }
 
         .about-section--rules-content {
-            @include flex-center-mixin;
-            justify-content: space-around;
+            @include flex-mixin(space-around, center);
             width: 100%;
 
             h2 {
@@ -82,20 +76,15 @@
 
 
     .about-section--policies {
-        @include flex-center-mixin;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 2rem;
+        @include flex-mixin(center, center, row, 2rem, wrap);
         position: relative;
         padding: $padding-2;
         bottom: -5rem;
 
         article {
-            @include flex-center-mixin;
+            @include flex-mixin(center, center, column, 1rem);
             background-color: $secondary;
-            flex-direction: column;
             width: 15rem;
-            gap: 1rem;
             min-width: 10rem;
             min-height: 13rem;
             text-align: center;
@@ -124,13 +113,10 @@
     }
 
     .about-section--achievements {
-        @include flex-center-mixin;
+        @include flex-mixin(end, center, column, 2rem);
         width: 100%;
-        flex-direction: column;
-        justify-content: end;
         background-color: $primary;
         color: $font-main;
-        gap: 2rem;
         height: 20rem;
         padding-bottom: $padding-4;
 
@@ -149,13 +135,11 @@
         }
 
         section {
-            @include flex-center-mixin;
-            gap: 2rem;
-            flex-wrap: wrap;
+            @include flex-mixin(center, center, row, 2rem, wrap);
             padding: 0 $padding-4;
 
             div {
-                @include flex-center-mixin;
+                @include flex-mixin(center, center, column);
                 width: fit-content;
                 flex-direction: column;
 

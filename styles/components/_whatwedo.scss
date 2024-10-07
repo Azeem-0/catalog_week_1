@@ -1,8 +1,6 @@
 .whatwedo-section {
-    @include flex-center-mixin;
-    flex-direction: column;
+    @include flex-mixin(center, center, column, 3rem);
     width: 100%;
-    gap: 3rem;
     padding: 0 $padding-3;
 
     .whatwedo-section--heading {
@@ -11,16 +9,13 @@
 
 
     .whatwedo-section--articles {
-        @include flex-center-mixin;
-        flex-wrap: wrap;
-        gap: 3rem;
+        @include flex-mixin(center, center, default, 3rem, wrap);
         padding: $padding-3*2 $padding-3*3;
 
         article {
-            @include flex-center-mixin;
+            @include flex-mixin(center, center, column, 1rem);
             background-color: $secondary;
-            flex-direction: column;
-            gap: 1rem;
+
             min-width: 15rem;
             min-height: 15rem;
             max-width: 15rem;

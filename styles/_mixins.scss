@@ -1,21 +1,18 @@
-@mixin flex-center-mixin {
+@mixin flex-mixin($justify : center, $align : center, $flex-direction : row, $gap: default, $flex-wrap: default) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
 }
+
 
 @mixin list-mixin {
     list-style-type: none;
     font-size: $font-size-sm;
 }
 
-@mixin hide-element-mixin {
-    display: none;
-}
-
-@mixin show-element-mixin {
-    display: block;
-}
 
 @mixin input-mixin {
     padding: $padding-1 * 1.5;
