@@ -60,6 +60,12 @@
 
 @media (max-width:600px) {
     .footer-section {
+        .footer-section--card-1 {
+            p {
+                width: 70%;
+            }
+        }
+
         .footer-section--card-2 {
             flex-direction: column;
             gap: 2rem;

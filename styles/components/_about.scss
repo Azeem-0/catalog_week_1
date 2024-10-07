@@ -87,7 +87,8 @@
         flex-direction: row;
         gap: 2rem;
         position: relative;
-        bottom: -3rem;
+        padding: $padding-2;
+        bottom: -5rem;
 
         article {
             @include flex-center-mixin;
