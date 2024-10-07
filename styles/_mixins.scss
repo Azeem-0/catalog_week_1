@@ -39,3 +39,22 @@
     border: 0;
     border-radius: 2px;
 }
+
+@mixin section-heading-mixin {
+    font-size: $font-size-lg;
+    font-weight: 700;
+    font-family: $font-primary;
+    color: $font-sub-heading;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        border-bottom: 3px solid #F64C72;
+    }
+}

@@ -4,11 +4,8 @@
     gap: 3rem;
     padding: 0 0 $padding-4*2;
 
-    h1 {
-        font-size: $font-size-lg;
-        font-weight: 500;
-        font-family: $font-primary;
-        color: $font-sub-heading;
+    .whatpeoplesay-section--heading {
+        @include section-heading-mixin;
     }
 
     .whatpeoplesay-section--aside-content {

@@ -5,11 +5,8 @@
     width: 100%;
     padding: $padding-4 0 $padding-4*2;
 
-    h1 {
-        font-size: $font-size-lg;
-        font-weight: 700;
-        font-family: $font-primary;
-        color: $font-sub-heading;
+    .ourteam-section--heading {
+        @include section-heading-mixin;
     }
 
     .ourteam-section--aside-content {

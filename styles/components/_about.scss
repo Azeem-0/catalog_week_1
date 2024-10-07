@@ -15,15 +15,10 @@
         padding: $padding-4 $padding-2;
         background-color: $secondary;
 
-        h1 {
-            font-size: $font-size-lg;
-            font-weight: 700;
-            font-family: $font-primary;
-            color: $font-sub-heading;
-            border-bottom: 2px solid $primary;
-            border-end-end-radius: 2px;
-            border-start-end-radius: 2px;
+        .about-section--heading {
+            @include section-heading-mixin;
         }
+
 
         p {
             width: 70%;

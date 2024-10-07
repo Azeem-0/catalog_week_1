@@ -21,10 +21,9 @@
         color: $font-main;
         text-align: center;
 
-        h1 {
-            font-family: $font-primary;
-            font-size: $font-size-lg;
-            font-weight: 500;
+        .our-mission--heading {
+            @include section-heading-mixin;
+            color: $font-main;
         }
 
         p {
