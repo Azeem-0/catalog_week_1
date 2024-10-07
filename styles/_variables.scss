@@ -8,9 +8,9 @@ $secondary : #FFFFFF;
 
 //font colors 
 
-$main : #FFFFFF;
-$sub_heading : #553D67;
-$content : #6D7D8B;
+$font-main : #FFFFFF;
+$font-sub-heading : #553D67;
+$font-content : #6D7D8B;
 
 
 // font-sizes 
@@ -22,7 +22,7 @@ $font-size-xs : $base-font-size * 0.5;
 $font-size-sm : $base-font-size * 0.75;
 $font-size-md : $base-font-size;
 $font-size-lg : $base-font-size * 1.5;
-
+$font-size-xl : $base-font-size * 2;
 
 //font-styles
 
@@ -39,6 +39,7 @@ $base-padding : 1rem;
 $padding-1 : $base-padding * 0.5;
 $padding-2 : $base-padding * 1;
 $padding-3 : $base-padding * 1.5;
+$padding-4 : $base-padding * 2;
 
 //margins 
 $base-margin : 1rem;

@@ -1,0 +1,7 @@
+input {
+    @include input-mixin;
+}
+
+button {
+    @include button-mixin;
+}

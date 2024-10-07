@@ -1,0 +1,74 @@
+.hero-section {
+    @include flex-center-mixin;
+    flex-direction: column;
+    background: url("../assets/hero-background-1.svg");
+    background-position: top;
+    background-size: cover;
+    padding: $padding-4*2 0;
+    min-height: fit-content;
+    background-repeat: no-repeat;
+
+    .hero--heading {
+        @include flex-center-mixin;
+        flex-direction: column;
+        text-align: center;
+        width: clamp(20rem, 40vw, 40vw);
+        color: $secondary;
+        padding: $padding-2;
+
+        h1 {
+            font-size: $font-size-xl;
+            font-family: $font-primary;
+            font-weight: 700;
+            padding: $padding-1;
+        }
+
+        p {
+            font-size: $font-size-md;
+            font-family: $font-secondary;
+            font-weight: 300;
+            padding: $padding-1;
+        }
+    }
+
+    form {
+        @include flex-center-mixin;
+        flex-direction: row;
+        gap: 1rem;
+        padding: $padding-2;
+
+        width: clamp(20rem, 35vw, 40vw);
+
+        input {
+            width: 70%;
+        }
+
+        button {
+            width: 30%;
+        }
+    }
+}
+
+
+@media (max-width:900px) {
+    .hero-section {
+        background: url("../assets/hero-background-2.svg");
+    }
+}
+
+@media (max-width:400px) {
+    .hero-section {
+        background: url("../assets/hero-background-3.svg");
+
+        .hero--heading {
+            p {
+                font-size: $font-size-sm;
+            }
+        }
+
+        form {
+            @include flex-center-mixin;
+            flex-direction: column;
+        }
+    }
+}
