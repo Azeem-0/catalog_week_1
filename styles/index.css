@@ -191,6 +191,7 @@ button {
   box-shadow: 0px 10px 15px 0px rgba(126, 97, 97, 0.2509803922);
   padding: 2rem 1rem;
   background-color: #FFFFFF;
+  position: relative;
 }
 .about-section .about-section--card .about-section--heading {
   font-size: 1.5rem;
@@ -199,6 +200,7 @@ button {
   color: #553D67;
   position: relative;
   display: inline-block;
+  padding-bottom: 0.5rem;
 }
 .about-section .about-section--card .about-section--heading::after {
   content: "";
@@ -217,8 +219,49 @@ button {
   text-align: center;
   color: #6D7D8B;
 }
-.about-section .about-section--card img {
+.about-section .about-section--card .about-section--rules {
+  width: 90%;
+  height: 1px;
+  background-color: #553D67;
+  margin: 3rem 0 5rem;
+}
+.about-section .about-section--card .about-section--rules .about-section--rules-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
   width: 80%;
+  bottom: 14%;
+  left: 55%;
+  transform: translate(-50%, 0%);
+}
+.about-section .about-section--card .about-section--rules .about-section--rules-images div img {
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+.about-section .about-section--card .about-section--rules .about-section--rules-images div h2 {
+  width: 60%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  color: #553D67;
+}
+.about-section .about-section--card .about-section--rules-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.about-section .about-section--card .about-section--rules-content h2 {
+  width: 20%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  color: #553D67;
 }
 .about-section .about-section--policies {
   display: flex;
@@ -326,7 +369,7 @@ button {
   .about-section .about-section--card {
     width: 100%;
   }
-  .about-section .about-section--card img {
+  .about-section .about-section--card .about-section--rules {
     display: none;
   }
 }
@@ -346,6 +389,7 @@ button {
   color: #553D67;
   position: relative;
   display: inline-block;
+  padding-bottom: 0.5rem;
 }
 .whatwedo-section .whatwedo-section--heading::after {
   content: "";
@@ -437,6 +481,7 @@ button {
   color: #553D67;
   position: relative;
   display: inline-block;
+  padding-bottom: 0.5rem;
   color: #FFFFFF;
 }
 .our-mission .our-mission--aside-content .our-mission--heading::after {
@@ -483,6 +528,7 @@ button {
   color: #553D67;
   position: relative;
   display: inline-block;
+  padding-bottom: 0.5rem;
 }
 .ourteam-section .ourteam-section--heading::after {
   content: "";
@@ -552,6 +598,7 @@ button {
   color: #553D67;
   position: relative;
   display: inline-block;
+  padding-bottom: 0.5rem;
 }
 .whatpeoplesay-section .whatpeoplesay-section--heading::after {
   content: "";

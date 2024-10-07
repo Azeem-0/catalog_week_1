@@ -14,6 +14,7 @@
         box-shadow: 0px 10px 15px 0px #7E616140;
         padding: $padding-4 $padding-2;
         background-color: $secondary;
+        position: relative;
 
         .about-section--heading {
             @include section-heading-mixin;
@@ -29,10 +30,56 @@
             color: $font-content;
         }
 
-        img {
-            width: 80%;
+        .about-section--rules {
+            width: 90%;
+            height: 1px;
+            background-color: $tertiary;
+            margin: $margin-2*3 0 $margin-2*5;
+
+            .about-section--rules-images {
+                @include flex-center-mixin;
+                justify-content: space-evenly;
+                position: absolute;
+                width: 80%;
+                bottom: 14%;
+                left: 55%;
+                transform: translate(-50%, 0%);
+
+                div {
+                    img {
+                        border-radius: 50%;
+                        background-color: $secondary;
+                        border: 1px solid black;
+                        padding: 5px;
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    h2 {
+                        width: 60%;
+                        font-family: $font-secondary;
+                        font-size: $font-size-sm;
+                        color: $font-sub-heading;
+                    }
+                }
+
+            }
+        }
+
+        .about-section--rules-content {
+            @include flex-center-mixin;
+            justify-content: space-around;
+            width: 100%;
+
+            h2 {
+                width: 20%;
+                font-family: $font-secondary;
+                font-size: $font-size-sm;
+                color: $font-sub-heading;
+            }
         }
     }
+
 
     .about-section--policies {
         @include flex-center-mixin;
@@ -150,7 +197,7 @@
         .about-section--card {
             width: 100%;
 
-            img {
+            .about-section--rules {
                 display: none;
             }
         }
