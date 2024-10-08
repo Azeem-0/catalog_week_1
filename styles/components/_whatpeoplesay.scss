@@ -2,7 +2,7 @@
     @include flex-mixin(center, center, column, 3rem);
     padding: 0 0 $padding-4*2;
 
-    .whatpeoplesay-section--heading {
+    .whatpeoplesay-section-heading {
         @include section-heading-mixin;
     }
 
@@ -10,12 +10,13 @@
         display: none;
     }
 
-    .whatpeoplesay-section--aside-content {
+    .whatpeoplesay-section-aside-content {
         display: flex;
         overflow-x: auto;
         width: 100%;
         gap: 2rem;
         padding: $padding-4 $padding-4*4;
+        padding-right: $padding-2;
 
         article {
             @include flex-mixin(center, self-start, column, 1rem, wrap);
@@ -26,11 +27,11 @@
             padding: $padding-3;
             border-radius: 5px;
 
-            .whatpeoplesay--stars {
+            .whatpeoplesay-stars {
                 width: 4rem;
             }
 
-            .whatpeoplesay--testimony {
+            .whatpeoplesay-testimony {
                 width: 2rem;
             }
 
@@ -60,8 +61,24 @@
         }
     }
 
-    .whatpeoplesay-section--arrows {
+    .whatpeoplesay-section-arrows {
         align-self: flex-end;
         padding: 0 $padding-4;
     }
+}
+
+@media (max-width:400px) {
+    .whatpeoplesay-section {
+        .whatpeoplesay-section-aside-content {
+            flex-direction: column;
+            padding: $padding-2*2 0;
+            align-items: center;
+        }
+
+        .whatpeoplesay-section-arrows {
+            display: none;
+        }
+    }
+
+
 }

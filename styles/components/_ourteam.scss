@@ -3,20 +3,21 @@
     width: 100%;
     padding: $padding-4 0 $padding-4*2;
 
-    .ourteam-section--heading {
+    .ourteam-section-heading {
         @include section-heading-mixin;
     }
 
 
-    .ourteam-section--scroll-section {
+    .ourteam-section-scroll-section {
         display: flex;
         overflow-x: auto;
         width: 100%;
         gap: 2rem;
         padding: $padding-4 $padding-4*4;
+        padding-right: $padding-2;
 
 
-        .ourteam-section--child {
+        .ourteam-section-child {
             display: flex;
             flex-direction: column;
             padding: 0 0 $padding-3;
@@ -67,5 +68,20 @@
         align-self: flex-end;
         font-family: $font-primary;
         font-weight: 700;
+    }
+}
+
+@media (max-width:400px) {
+    .ourteam-section {
+        .ourteam-section-scroll-section {
+            flex-direction: column;
+            padding: 0;
+            align-items: center;
+            padding: $padding-2*2 0;
+        }
+
+        button {
+            display: none;
+        }
     }
 }

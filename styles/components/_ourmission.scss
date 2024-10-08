@@ -11,7 +11,7 @@
         object-fit: cover;
     }
 
-    .our-mission--aside-content {
+    .our-mission-aside-content {
         @include flex-mixin(center, center, column, 2rem);
         flex-direction: column;
         gap: 2rem;
@@ -21,7 +21,7 @@
         color: $font-main;
         text-align: center;
 
-        .our-mission--heading {
+        .our-mission-heading {
             @include section-heading-mixin;
             color: $font-main;
         }
@@ -47,7 +47,7 @@
             display: none;
         }
 
-        .our-mission--aside-content {
+        .our-mission-aside-content {
             width: 100%;
         }
     }

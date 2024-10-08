@@ -3,12 +3,12 @@
     width: 100%;
     padding: 0 $padding-3;
 
-    .whatwedo-section--heading {
+    .whatwedo-section-heading {
         @include section-heading-mixin;
     }
 
 
-    .whatwedo-section--articles {
+    .whatwedo-section-articles {
         @include flex-mixin(center, center, default, 3rem, wrap);
         padding: $padding-3*2 $padding-3*3;
 
@@ -51,7 +51,7 @@
             font-size: $font-size-md * 1.25;
         }
 
-        .whatwedo-section--articles {
+        .whatwedo-section-articles {
             article {
                 h2 {
                     font-size: $font-size-md;

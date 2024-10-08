@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
 
-    .footer-section--card-1 {
+    .footer-section-card-1 {
         @include flex-mixin(center, center, column, 2rem);
         text-align: center;
         background-color: $primary;
@@ -25,12 +25,12 @@
         }
     }
 
-    .footer-section--card-2 {
+    .footer-section-card-2 {
         @include flex-mixin(space-between, center);
         width: 100%;
         padding: $padding-4 $padding-4 * 2;
 
-        .footer-section--card-2--copyright {
+        .footer-section-card-2-copyright {
             @include flex-mixin(center, self-start, column);
 
             small {
@@ -40,7 +40,7 @@
             }
         }
 
-        .footer-section--card-2--social {
+        .footer-section-card-2-social {
             @include flex-mixin(center, center, default, 1rem);
             color: $font-sub-heading;
 
@@ -54,17 +54,17 @@
 
 @media (max-width:600px) {
     .footer-section {
-        .footer-section--card-1 {
+        .footer-section-card-1 {
             p {
                 width: 70%;
             }
         }
 
-        .footer-section--card-2 {
+        .footer-section-card-2 {
             flex-direction: column;
             gap: 2rem;
 
-            .footer-section--card-2--copyright {
+            .footer-section-card-2-copyright {
                 align-items: center;
             }
         }

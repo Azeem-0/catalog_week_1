@@ -10,7 +10,7 @@
     padding: $padding-4*2 0;
     min-height: fit-content;
 
-    .hero--heading {
+    .hero-heading {
         @include flex-mixin(center, center, column);
         text-align: center;
         width: clamp(20rem, 40vw, 40vw);
@@ -59,7 +59,7 @@
     .hero-section {
         background: url("../assets/hero-background-3.svg");
 
-        .hero--heading {
+        .hero-heading {
             p {
                 font-size: $font-size-sm;
             }

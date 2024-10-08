@@ -4,7 +4,7 @@
     position: relative;
     top: -3rem;
 
-    .about-section--card {
+    .about-section-card {
         @include flex-mixin(center, center, column, 2rem);
         width: 50%;
         box-shadow: 0px 10px 15px 0px #7E616140;
@@ -12,7 +12,7 @@
         background-color: $secondary;
         position: relative;
 
-        .about-section--heading {
+        .about-section-heading {
             @include section-heading-mixin;
         }
 
@@ -26,13 +26,13 @@
             color: $font-content;
         }
 
-        .about-section--rules {
+        .about-section-rules {
             width: 90%;
             height: 1px;
             background-color: $tertiary;
             margin: $margin-2*3 0 $margin-2*5;
 
-            .about-section--rules-images {
+            .about-section-rules-images {
                 @include flex-mixin(space-evenly, center);
                 position: absolute;
                 width: 80%;
@@ -61,7 +61,7 @@
             }
         }
 
-        .about-section--rules-content {
+        .about-section-rules-content {
             @include flex-mixin(space-around, center);
             width: 100%;
 
@@ -75,7 +75,7 @@
     }
 
 
-    .about-section--policies {
+    .about-section-policies {
         @include flex-mixin(center, center, row, 2rem, wrap);
         position: relative;
         padding: $padding-2;
@@ -112,7 +112,7 @@
         }
     }
 
-    .about-section--achievements {
+    .about-section-achievements {
         @include flex-mixin(end, center, column, 2rem);
         width: 100%;
         background-color: $primary;
@@ -158,11 +158,15 @@
 
 @media (max-width:900px) {
     .about-section {
-        .about-section--card {
+        .about-section-card {
             width: 100%;
         }
 
-        .about-section--achievements {
+        .about-section-rules {
+            display: none;
+        }
+
+        .about-section-achievements {
             height: 20rem;
 
             h1 {
@@ -179,10 +183,10 @@
 
 @media (max-width:400px) {
     .about-section {
-        .about-section--card {
+        .about-section-card {
             width: 100%;
 
-            .about-section--rules {
+            .about-section-rules {
                 display: none;
             }
         }

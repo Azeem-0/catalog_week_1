@@ -2,7 +2,7 @@
 
     @include flex-mixin(center, center, column);
 
-    .header--logo {
+    .header-logo {
         @include flex-mixin(center, center, column);
         font-size: $font-size-sm;
         font-family: $font-primary;
@@ -20,9 +20,9 @@
         }
     }
 
-    .header--navigation {
+    .header-navigation {
 
-        .navigation--list {
+        .navigation-list {
             @include flex-mixin(center, center, default, 3rem);
             @include list-mixin;
             gap: 3em;
@@ -30,7 +30,7 @@
             font-weight: 500;
             padding: $padding-1;
 
-            .nav--items {
+            .nav-items {
                 color: $font-sub-heading;
                 cursor: pointer;
             }
@@ -51,9 +51,9 @@
         @include flex-mixin(space-between, center, row);
         padding: $padding-1;
 
-        .header--navigation {
+        .header-navigation {
 
-            .navigation--list {
+            .navigation-list {
                 display: none !important;
             }
 
