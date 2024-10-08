@@ -1,9 +1,8 @@
 //main component
-@import "components/main";
+@import "./base/main";
 
 //base styles component
-@import "components/base";
-
+@import "./base/base";
 
 //header component
 @import "components/header";
