@@ -22,8 +22,8 @@
             flex-direction: column;
             padding: 0 0 $padding-3;
             box-sizing: border-box;
-            min-width: 13rem;
-            width: 13rem;
+            min-width: 17rem;
+            width: 17rem;
             height: fit-content;
             gap: 5px;
             box-shadow: 0px 10px 15px 0px #655A5A40;
@@ -78,6 +78,11 @@
             padding: 0;
             align-items: center;
             padding: $padding-2*2 0;
+
+            .ourteam-section-child {
+                width: 13rem;
+                min-width: 13rem;
+            }
         }
 
         button {
