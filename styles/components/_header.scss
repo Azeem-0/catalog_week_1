@@ -46,7 +46,7 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 720px) {
     .header-section {
         @include flex-mixin(space-between, center, row);
         padding: $padding-1;

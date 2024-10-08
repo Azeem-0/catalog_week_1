@@ -4,7 +4,7 @@
   gap: 1rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .main-section {
     gap: 0.5rem;
   }
@@ -36,7 +36,7 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   input {
     padding: 0.5rem;
   }
@@ -92,7 +92,7 @@ button {
   color: #553D67;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .header-section {
     display: flex;
     justify-content: space-between;
@@ -170,7 +170,7 @@ button {
     background: url("../assets/hero-background-2.svg");
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .hero-section {
     background: url("../assets/hero-background-3.svg");
   }
@@ -400,7 +400,7 @@ button {
     width: 60%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .about-section .about-section-card {
     width: 100%;
   }
@@ -482,7 +482,7 @@ button {
   color: #6D7D8B;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .whatwedo-section h1 {
     font-size: 1.25rem;
   }
@@ -652,7 +652,7 @@ button {
   font-weight: 700;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .ourteam-section .ourteam-section-scroll-section {
     flex-direction: column;
     padding: 0;
@@ -756,7 +756,7 @@ button {
   padding: 0 2rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .whatpeoplesay-section .whatpeoplesay-section-aside-content {
     flex-direction: column;
     padding: 2rem 0;
@@ -836,7 +836,7 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .footer-section .footer-section-card-1 p {
     width: 70%;
   }
